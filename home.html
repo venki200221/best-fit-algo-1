@@ -1,0 +1,110 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class = "row background-black" id="page-wrapper">
+		<br>
+        <h2 class = "col-md-12 text-center" style = "height: 100px; margin-top: 50px">BEST FIT ALGORITHM-STIMULATOR</h2>
+        <br>
+        
+        
+     
+         <div class = "row col-12" >
+            <div class = "row col-6 grey" style = "padding: 20px, 0px, 20px, 0px !important">
+                <div class = "col-6">
+            Upload Job list: 
+            <input type="file" id="fileInput">
+        </div>
+       
+        <div class = "col-6">
+            Upload Memory list: 
+            <input type="file" id="fileInput2">
+        </div>
+                <div class="col-6"> 
+                <div class="card-header">
+                    <strong>Job List</strong>
+                  </div>
+                  <div class="card-block scroll-box">
+                    
+                     <pre id = "fileDisplayArea"></pre>
+                  </div>
+            </div>
+            <div class="col-6">
+                <div class="card-header" >
+                    <strong>Memory List</strong>
+                  </div>
+                  <div class="card-block scroll-box">
+                    
+                     <pre id = "fileDisplayArea2"></pre>
+                  </div>
+            </div>
+            <div class= "extra row col-12">
+
+                <strong class = "col-6">Throughput: </strong>
+                <div id = "throughput" class = "col-6">
+
+                </div>
+                <strong class = "col-6">Storage Utilization:</strong>
+                <div id = "storageUtil" class = "col-6">
+
+                </div>
+                <strong class = "col-6">Waiting queue:</strong>
+                <div id = "waiting" class = "col-6">
+                
+                </div>
+          
+                <strong class = "col-6">Completed Processes:</strong>
+                 <div id = "completed" class = "col-6">
+
+                </div>
+
+                <strong  class = "col-6">Internal Fragmentation:</strong>
+                  <div id = "internalFrag" class = "col-6">
+
+                </div>
+            </div>
+        </div>
+
+           
+           
+        	
+			 <div class=" col-6">
+        			<div class = "row col-12">
+        			<span class="col-6">
+        				<h1 style="display:inline">Time : <h1 style="display:inline" id = "counter">0</h1></h1>
+        				
+        			</span>
+        			<span class="col-6"><button id = "play"  class= "btn btn-primary">Play</button></span>
+        		</div>
+				 
+			
+			 
+   
+			<div class = "col-12" id = "tableContainer">
+					<table id = "memTable" class="table grey">
+						<thead id ="tableHead">
+							<tr>
+								<th>Memory Partition</th>
+								<th>Memory Size</th>
+								<th>Job Number</th>
+								<th>Job Size</th>
+								<th>Time Remaining</th>
+                                <th>Internal Fragmentation</th>
+							</tr>
+						</thead>
+						<tbody id = "tableBody"></tbody>
+					</table>
+			</div>
+
+	   </div>
+        </div>
+       
+	
+</div>
+</body>
+<script src="index.js"></script>
+</html>

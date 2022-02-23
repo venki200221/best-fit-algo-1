@@ -1,0 +1,31 @@
+.scroll-box {
+    overflow-y: scroll;
+    height: 200px;
+}
+.autoPadding {
+    margin: 15px
+}
+.background-black {
+    background-color: #1B1B1B;
+}
+.green, th {
+     color: #1ED760;
+}
+.grey {
+    background-color: #181818;
+}
+h2,h3,h4,h5 {
+    color:#FFFFFF;
+}
+td {
+    color : #ecebe8;
+}
+h1 {
+    color:#FF9800;
+}
+body, pre {
+    color:#FF9800;
+}
+.extra > div {
+    font-size: 12px;
+}
